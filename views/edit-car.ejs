@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <div class="row">
+        <div class="col-auto pe-0">
+            <div class="navbar-kiri">
+                <div class="foto"></div>
+                <div class="navbar-home">
+                    <img src="./images/fi_home.png" alt="" style="margin-left: 18px;">
+                    <p class="font-dashboard">Dashboard</p>
+                </div>
+                <div class="navbar-cars">
+                    <img src="./images/fi_truck.png" alt="" style="margin-left: 18px;">
+                    <p class="font-dashboard">Cars</p>
+                </div>
+            </div>
+        </div>
+        <div class="col ps-0">
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                        <div class="logo-panjang"></div>
+                    </h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body p-0">
+                    <h5 class="judul-offcanvas">CARS</h5>
+                    <button class="button-offcanvas">List Cars</button>
+                </div>
+            </div>
+            <nav class="navbar">
+                <div class="col-auto ms-2">
+                    <button class="navbar-light navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <form class="d-flex">
+                    <input class="form-control-search" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn-search" type="submit">
+                        <div class="font-button">Search</div>
+                    </button>
+                </form>
+                <div>
+                    <a href=""><img class="" src="./images/Group 15.png" alt=""></a>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-close-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Unis Badri
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item active" href="#">Account</a></li>
+                    <li><a class="dropdown-item" href="#">Notification</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Beranda -->
+            <div class="row">
+                <div class="bg-beranda">
+                    <div class="direktori">
+                        Cars > List Cars >
+                        <div class="direktori-now">
+                            Update Car Information
+                        </div>
+                    </div>
+                    <div class="container-fluid d-flex flex-row p-0">
+                        <div class="judul-beranda">
+                            Update Car Information
+                        </div>
+                    </div>
+                    <div class="container-fluid bg-form">
+                        <form class="form-add-mobil">
+                            <div class="row mb-3">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">Nama</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" placeholder="Avanza" id="inputNama">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="inputPassword3" class="col-sm-2 col-form-label">Sewa /Hari</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" placeholder="Rp. 0,-" id="inputSewa">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">Ukuran</label>
+                                <select class="form-select col-sm-2" aria-label="Default select example"
+                                    id="inputUkuran" style="width: 79%; margin-left: 12px;">
+                                    <option selected="1">Small</option>
+                                    <option value="2">Medium</option>
+                                    <option value="3">Large</option>
+                                </select>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="inputPassword3" class="col-sm-2 col-form-label">Foto</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="file" id="inputFoto">
+                                    <p style="color: gray;">File Size Max 2MB</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="container-btn d-flex flex-row">
+                        <button type="submit" class="btn-cancel">Cancel</button>
+                        <button type="submit" class="btn-save">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

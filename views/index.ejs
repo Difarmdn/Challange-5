@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <div class="row">
+        <div class="col-auto pe-0">
+            <div class="navbar-kiri">
+                <div class="foto"></div>
+                <div class="navbar-home">
+                    <img src="./images/fi_home.png" alt="" style="margin-left: 18px;">
+                    <p class="font-dashboard">Dashboard</p>
+                </div>
+                <div class="navbar-cars">
+                    <img src="./images/fi_truck.png" alt="" style="margin-left: 18px;">
+                    <p class="font-dashboard">Cars</p>
+                </div>
+            </div>
+        </div>
+        <div class="col ps-0">
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                        <div class="logo-panjang"></div>
+                    </h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body p-0">
+                    <h5 class="judul-offcanvas">CARS</h5>
+                    <button class="button-offcanvas">List Cars</button>
+                </div>
+            </div>
+            <nav class="navbar">
+                <div class="col-auto ms-2">
+                    <button class="navbar-light navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <form class="d-flex">
+                    <input class="form-control-search" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn-search" type="submit">
+                        <div class="font-button">Search</div>
+                    </button>
+                </form>
+                <div>
+                    <a href=""><img class="" src="./images/Group 15.png" alt=""></a>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-close-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Unis Badri
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item active" href="#">Account</a></li>
+                    <li><a class="dropdown-item" href="#">Notification</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Beranda -->
+            <div class="row">
+                <div class="bg-beranda">
+                    <div class="direktori">
+                        Cars >
+                        <div class="direktori-now">
+                            List Cars
+                        </div>
+                    </div>
+                    <div class="container-fluid d-flex flex-row p-0">
+                        <div class="judul-beranda">
+                            List Cars
+                        </div>
+                        <a href="/Challenge-5/add-car.html">
+                            <button class="new-car">
+                                + Add New Car
+                            </button>
+                        </a>
+                    </div>
+                    <div class="sorting-container d-flex flex-row mx-2">
+                        <button class="sorting me-2">
+                            All
+                        </button>
+                        <button class="sorting me-2">
+                            Small
+                        </button>
+                        <button class="sorting me-2">
+                            Medium
+                        </button>
+                        <button class="sorting me-2">
+                            Large
+                        </button>
+                    </div>
+                    <!-- Isi Mobil -->
+                    <div class="container mt-4">
+                        <div id="cars-container" class="row row-cols-lg-3 row-cols-sm-2 row-cols-1 g-3"></div>
+                    </div>
+                    <div class="content m-4 row gap-3 pe-5">
+                        <div class="card p-3 rounded-3" style="width: max-content;">
+                            <img class="card-img-top p-5 mt-3" src="./images/cars.png" alt="cars">
+                            <div class="card-body">
+                                <h5 class="card-title">Nama/Tipe Mobil</h5>
+                                <h3 class="card-text">Harga Sewa</h3>
+                                <p><img src="./images/fi_clock.svg" alt="fi_clock"> update</p>
+                                <button type="button" class="btn-car btn-delete me-2"><img src="./images/fi_trash.svg" alt="fi_trash">Delete</button>
+                                <button type="button" class="btn-car btn-edit"><img src="./images/fi_edit.svg" alt="fi_edit">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
